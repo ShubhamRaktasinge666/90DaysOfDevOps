@@ -15,6 +15,9 @@
 
   <p><b>Application:</b> It is the applications are software programs that run on top of the operating system and interact with system resources through a structured hierarchy involving system libraries, the shell, and the kernel.</p>
 
+  <h1>Processes in Linux</h1>
+  <p>Process are running instance of a program. which generally show in top command . ex: If i am running some process in background , it will show in top . Also we can list process using ps ( ps au , ps ef ) / or top commands</p>
+
 </body>
 </html>
 
