@@ -21,5 +21,12 @@
 
 <h1>Networking Commands</h1>
 <p><b>ping</b>: Test the connectivity between devices / receiving the packets which shows that the connectivity is fine.</p>
+<p><b>dig</b>: queries Domain Name Systems (DNS) and finds information for DNS records.</p>
+<p><b>ip addr</b>: shows the network interface information, including the associated IP addresses.</p>
+<p><b>nslookup</b>: shows the DNS resolution information for the provided domain.</p>
+<p><b>traceroute</b>: The command tracks the route that packets take to reach a destination on a TCP/IP network.</p>
+
+
+
 
 
