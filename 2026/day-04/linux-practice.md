@@ -11,6 +11,14 @@
 <p>_________________________________________________________________________________________________________________________</p>
 
 <h1>Service Commands</h1>
-<p><b> # ps -au</b>: This command display information about running processes</p>
-<img src="linux.jpg" width="200" height="300">
+<p><b> # systemctl status service_name </b>: This command display that the services are in which state. ex: like active( running) , inactive(stopped)</p>
+<img src="status.png" width="800" height="300">
+
+<p><b> # systemctl restart service_name </b>: This command will restart the service</p>
+<img src="restart.png" width="800" height="300">
+
+<p><b> # systemctl stop service_name </b>: This command will stop the service and after checking status it was showing inactive</p>
+<img src="stop.png" width="800" height="300">
+
+
 
