@@ -19,6 +19,18 @@
 
 <p><b> # systemctl stop service_name </b>: This command will stop the service and after checking status it was showing inactive</p>
 <img src="stop.png" width="800" height="300">
+<p>_______________________________________________________________________________________________________________________</p>
+
+<h1>Log Commands</h1>
+<p><b> # journalctl -u service-name </b>: This command display the full logs for a service.</p>
+<img src="journalctl.png" width="800" height="300">
+
+<p><b> # tail -f service-name </b>: This command display the logs of a service in a file.</p>
+<img src="tail_nginx.png" width="800" height="300">
+
+
+
+
 
 
 
