@@ -18,7 +18,17 @@ ID_LIKE=debian</p>
 <p><b>mkdir /tmp/runbook-demo</b> : mkdir: created directory '/tmp/runbook-demo'</p>
 <p><b>Observation</b> : Directory created successfully</p><br>
 <p><b>cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo</b></p>
-<p><b>Observation</b> : Copy files from /etc/hosts. Filesystem is writeable.</p>
+<p><b>Observation</b> : Copy files from /etc/hosts. Filesystem is writeable.</p><br>
+
+<h2>CPU / Memory</h2>
+<p><b>Command : ps -aux | grep $USER</b></p>
+<p> PID - 1352 <br> %CPU - 0.0 <br> %MEM - 0.7 <br>   COMMAND - sshd: ubuntu@pts/1</p>
+<p><b>Observation</b> : Process running and CPU & memory usage is negligible.</p><br>
+
+<p><b>Command : free -h</b></p>
+<p> Total: 914Mi <br> Used: 360Mi <br> Available: 553Mi </p>
+<p><b>Observation</b> : Sufficient memory available.</p><br>
+
 
 
 
