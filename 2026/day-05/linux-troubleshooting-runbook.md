@@ -16,7 +16,7 @@ ID_LIKE=debian</p>
 
 <h2>Filesystem sanity</h2>
 <p><b>mkdir /tmp/runbook-demo</b> : mkdir: created directory '/tmp/runbook-demo'</p>
-<p><b>Observation</b></p> : Directory created successfully<br>
+<p><b>Observation</b> : Directory created successfully</p><br>
 <p><b>cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo</b></p>
 <p><b>Observation</b> : Copy files from /etc/hosts. Filesystem is writeable.</p>
 
