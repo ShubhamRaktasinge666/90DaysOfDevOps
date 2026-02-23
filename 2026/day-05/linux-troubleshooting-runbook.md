@@ -29,6 +29,31 @@ ID_LIKE=debian</p>
 <p> Total: 914Mi <br> Used: 360Mi <br> Available: 553Mi </p>
 <p><b>Observation</b> : Sufficient memory available.</p><br>
 
+<h2>Disk / IO</h2>
+<p><b>Command : df -h</b></p>
+<p><b>Output : /dev/root  &nbsp;      6.8G &nbsp; 1.8G &nbsp;  5.0G  &nbsp; 27% &nbsp; /</b></p>
+<p><b>Observation</b> : 90% root partition available.</p><br>
+
+<p><b>Command : iostat -h</b></p>
+<p><b>Observation</b> : CPU idle= 97.08% -> which is healthy. iowait= 0.55% -> small percentage of CPU time waiting for I/O. system= 0.61% -> low. user= 1.75% .</p><br>
+
+<h2>Network</h2>
+<p><b>Command : sudo ss -tulpn | grep  sshd</b></p>
+<p><b>Output : tcp  &nbsp;  LISTEN 0   &nbsp;    4096      &nbsp;             0.0.0.0:22      &nbsp;       0.0.0.0:*    &nbsp; users:(("sshd",pid=1029,fd=4),("systemd",pid=1,fd=176))</b></p>
+<p><b>Observation</b> : ssh is listening on port 22.</p><br>
+
+<p><b>Command : nc -zv localhost 22</b></p>
+<p><b>Output : Connection to localhost (127.0.0.1) 22 port [tcp/ssh] succeeded!</b></p>
+<p><b>Observation</b> : ssh connection confirmed.</p><br>
+
+
+
+
+
+
+
+
+
 
 
 
