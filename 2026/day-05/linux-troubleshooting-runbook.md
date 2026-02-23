@@ -46,6 +46,14 @@ ID_LIKE=debian</p>
 <p><b>Output : Connection to localhost (127.0.0.1) 22 port [tcp/ssh] succeeded!</b></p>
 <p><b>Observation</b> : ssh connection confirmed.</p><br>
 
+<h2>Logs</h2>
+<p><b>Command : journalctl -u ssh -n 50</b></p>
+<p><b>Observation</b> : Last 50 lines shows normal authentication attempts no errors or warnings.</p><br>
+<p><b>Command : tail -n 50 /var/log/auth.log </b></p>
+<p><b>Observation</b> : Recent login attempts record. No suspicious activity detected.</p><br>
+
+
+
 
 
 
