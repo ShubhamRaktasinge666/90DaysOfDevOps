@@ -19,6 +19,7 @@ Read the last two line of notes.txt<br>
 Write using tee command that also prints the output to terminal -a appends
 
 ## <h1>Hands on of above command </h1>
+<img src="day_6.png" width="800" height="300">
 
 
 
