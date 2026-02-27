@@ -17,4 +17,7 @@
 * `/usr/bin` - Contains the majority of user command binaries — programs and utilities that regular users and administrators run in daily work.
 
 * `/opt` - Reserved for installing optional 3rd party software that are not part of core system distribution(ex. google chrome) I would use this directory to to see what external or commercial applications are installed.
-* 
+
+# Part 2: Scenario-Based Practice 
+## 
+ 
