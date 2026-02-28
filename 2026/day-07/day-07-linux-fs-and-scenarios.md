@@ -18,6 +18,73 @@
 
 * `/opt` - Reserved for installing optional 3rd party software that are not part of core system distribution(ex. google chrome) I would use this directory to to see what external or commercial applications are installed.
 
-# Part 2: Scenario-Based Practice 
-## 
- 
+#  Scenario-Based Practice 
+## Scenario 1: Service Not Starting
+A service called 'ssh' failed to start after a server reboot.
+What commands would you run to diagnose the issue?
+Write at least 4 commands in order.
+
+Step 1 : * `systemctl status ssh`
+Why : Check if the service is running or failed or stopped.
+
+Step 2 : * `journalctl -u ssh -n 50`
+Why : If service is failed check logs.
+
+Step 3 : * `systemctl is-enabled ssh`
+Why : To check if service starts automatically on boot.
+
+## Scenario 2: High CPU Usage
+Your manager reports that the application server is slow. You SSH into the server. What commands would you run to identify which process is using high CPU?
+
+Step 1 :  `top/htop`
+
+Why : List all the running processes. Check for processes that are CPU intensive.
+
+Step 2 : `ps aux --sort=-%cpu | head -10`
+
+Why : Sort the processes by CPU percentage. Note down PID of top processes.
+
+Step 3 : `sudo renice +10 -p PID`
+
+Why : Increases the nice value, lowering the process priority so it gets less CPU time. Useful if you don't want to kill the process but need to reduce its impact.
+
+Step 4 : `kill PID`
+
+Why : Kill CPU intensive processes if necessary.
+
+## Scenario 3: Finding Service Logs
+
+A developer asks: "Where are the logs for the 'ssh' service?" The service is managed by systemd. What commands would you use?
+
+Step 1 : `systemctl status ssh`
+
+Why : Check service status first.
+
+Step 2 : `journalctl -u ssh -n 50`
+
+Why : Check last 50 lines of logs.
+
+Step 3 : `journalctl -u ssh -f`
+
+Why : Check logs real-time.
+
+## Scenario 4: File Permissions Issue
+
+A script at /home/user/backup.sh is not executing. When you run it: ./backup.sh You get: "Permission denied" What commands would you use to fix this?
+
+Step 1 : `ls -l demo.sh`
+
+Why : Check current permissions of file. Look for: -rw-r--r-- (notice no 'x' = not executable).
+
+Step 2 : `chmod +x demo.sh`
+
+Why : Add execute permission to file.
+
+Step 3: `ls -l demo.sh`
+
+Why : Verify it worked. Look for: -rwxr-xr-x (notice 'x' = executable).
+
+Step 4: `./demo.sh`
+
+Why : Run it.
+
