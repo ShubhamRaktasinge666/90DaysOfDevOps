@@ -32,5 +32,25 @@ Step 1: View Nginx Logs
 <img src="journalctl-nginx.png" width="600" height="300">
 
 
+Step 2 : Save logs to file
+Commad : `scp -i "shell.pem" ubuntu@ec2-35-93-207-92.us-west-2.compute.amazonaws.com:/var/log/nginx/access.log .`
+
+# Install Docker
+step 1 : Install docker
+* Command : `sudo apt-get install docker.io`
+* Check docker service logs
+<img src="journalctl-docker.png" width="600" height="300">
+
+# Challenges Faced
+After installing docker  the docker list of all docker images is not showing
+* Issue faced : `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.50/containers/json": dial unix /var/run/docker.sock: connect: permission denied`
+
+Solved after approach
+* Command :  `sudo usermod -aG docker $USER`
+* Command : ` newgrp docker `
+
+
+
+
   
 
