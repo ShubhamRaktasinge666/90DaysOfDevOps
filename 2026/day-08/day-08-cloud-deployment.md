@@ -21,5 +21,15 @@ step 1 : Add inbound rule on HTTP port number 80 on instance security group.<br>
 step 2 : Test Web Access: Open browser and visit: `http://<your-instance-ip>`<br>
 You should see the Nginx welcome page!<br>
 <img src="Nginx-webpage.png" width="600" height="300">
+
+# Extract Nginx Logs
+Step 1: View Nginx Logs
+* Command : `cat /var/log/nginx/access.log`
+<img src="access-log.png" width="600" height="300">
+
+Check nginx service logs
+<img src="journalctl-nginx.png" width="600" height="300">
+
+
   
 
