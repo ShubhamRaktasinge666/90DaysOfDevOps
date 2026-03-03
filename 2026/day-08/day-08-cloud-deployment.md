@@ -24,10 +24,11 @@ You should see the Nginx welcome page!<br>
 
 # Extract Nginx Logs
 Step 1: View Nginx Logs
-* Command : `cat /var/log/nginx/access.log`
-<img src="access-log.png" width="600" height="300">
+* Command : `cat /var/log/nginx/access.log` <br>
+<img src="access-log.png" width="600" height="300"> <br>
 
-Check nginx service logs
+* Check nginx service logs <br>
+* Command : `journalctl -u nginx`
 <img src="journalctl-nginx.png" width="600" height="300">
 
 
