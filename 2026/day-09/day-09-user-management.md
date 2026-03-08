@@ -20,10 +20,15 @@
 * Command : `sudo chmod 775 dev-project`
 * Command : `sudo chgrp developers dev-project `
 * Command : ` sudo chmod 775 dev-project`
-* Command : `su tokyo` and `password` , then cd /dev-project and create a file for tokyo user.
-* Command : `su berlin` and `password` , then cd /dev-project and create a file for berlin user.
+* Command : `su tokyo` and `password` , then cd /opt/dev-project and create a file for tokyo user.
+* Command : `su berlin` and `password` , then cd /opt/dev-project and create a file for berlin user.
 
 # Task 5: Team Workspace
 * Command : `sudo useradd -m nairobi`
 * Command : `sudo groupadd project-team`
-* 
+* Command : `sudo usermod -aG project-team tokyo`
+* Command : `sudo usermod -aG project-team nairobi`
+* Command : `sudo mkdir -p /opt/team-workspace`
+* Command : `sudo chgrp project-team /opt/team-workspace`
+* Command : `sudo chmod 775 /opt/team-workspace`
+* Command : `su nairobi` and `password` , then cd /opt/team-workspace and create a file for nairobi user.
