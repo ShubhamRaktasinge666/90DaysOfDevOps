@@ -87,5 +87,30 @@ Use recursive flag (`-R`)
 * Output : `drwxrwxr-x 2 professor planner  4096 Mar 12 02:16 vault`
 * Output : `-rw-rw-r-- 1 professor planner  0 Mar 12 02:16 gold.txt`
 * Output : `-rw-rw-r-- 1 professor planner  0 Mar 12 02:16 strategy.conf`
+
+## Task 6: Practice Challenge
+1. Create users: `tokyo`, `berlin`, `nairobi` (if not already created) <br>
+2. Create groups: `vault-team`, `tech-team`
+3. Create directory: `bank-heist/`
+4. Create 3 files inside:
+   * Command : `touch bank-heist/access-codes.txt`
+   * Command : `touch bank-heist/blueprints.pdf`
+   * Command : `touch bank-heist/escape-plan.txt`
+
+5. Set different ownership:
+   * `access-codes.txt` → owner: `tokyo`, group: `vault-team`
+   * `blueprints.pdf` → owner: `berlin`, group: `tech-team`
+   * `escape-plan.txt` → owner: `nairobi`, group: `vault-team`
+##Commands Used
+* View ownership : `ls -l filename`
+* Change owner only : `sudo chown newowner filename`
+* Change group only : `sudo chgrp newgroup filename`
+* Change both owner and group : `sudo chown owner:group filename`
+* Recursive change (directories) : `sudo chown -R owner:group directory/`
+* Change only group with chown : `sudo chown :groupname filename`
   
+## What I Learned
+* Managing User & Groups
+* Understood file ownership
+
 
