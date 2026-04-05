@@ -24,12 +24,12 @@ I practiced creating/modifying/permission of Linux file/folder. Here is how to s
 
 ## Cheat Sheet
 Top commands I'd use in an incident :
-`ps aux` - Lists all running processes with CPU/memory usage
-`mpstat` - Monitors CPU utilization across cores, highlighting bottlenecks or unusual load.
-`systemctl status service` - Verifies if a critical service is active, failed, or restarting.
-`cat /var/log/nginx/error.log` - Reads raw logs for web server errors (replace with relevant service log path).
-`journalctl -u service` - Retrieves detailed logs for a given service, useful for debugging failures.
-`free -m` - Displays memory usage in MB to check for exhaustion or leaks.
+* `ps aux` - Lists all running processes with CPU/memory usage
+* `mpstat` - Monitors CPU utilization across cores, highlighting bottlenecks or unusual load.
+* `systemctl status service` - Verifies if a critical service is active, failed, or restarting.
+* `cat /var/log/nginx/error.log` - Reads raw logs for web server errors (replace with relevant service log path).
+* `journalctl -u service` - Retrieves detailed logs for a given service, useful for debugging failures.
+* `free -m` - Displays memory usage in MB to check for exhaustion or leaks.
 
 ## What will I focus on improving in the next 3 days?
 * I want to focus the partition and complete Linux Volume Management.
